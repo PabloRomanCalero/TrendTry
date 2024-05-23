@@ -198,6 +198,7 @@ async function compraFinal(precioFinal,numeroCarrito,stockTotal,orderLines,lista
     //Descuentos del usuario
     let descuentosUser = await fetch('api/descuentos');
     let descuentos = await descuentosUser.json();
+    let precioSinDescuento = precioFinal;
     console.log(descuentos);
     if(descuentos.length > 0){
         let selectDescuentos = document.createElement('select');
@@ -220,8 +221,10 @@ async function compraFinal(precioFinal,numeroCarrito,stockTotal,orderLines,lista
             let descuentoSeleccionado = e.target.value;
             
             if (descuentoSeleccionado) {
-                precioFinal = (precioFinal - (precioFinal * descuentoSeleccionado)).toFixed(2);
+                precioFinal = (precioSinDescuento - (precioSinDescuento * descuentoSeleccionado)).toFixed(2);
                 console.log(precioFinal);
+            } else{
+                precioFinal = precioSinDescuento;
             }
             
             totalPrecio.textContent = `Total: ${precioFinal} €`;
