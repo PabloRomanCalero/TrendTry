@@ -27,7 +27,7 @@ class OrderController extends Controller
         } else {
             return response()->json('no registrado', 200);
         }
-    }
+    } 
 
     public function paidOrderList()
     {
@@ -35,7 +35,7 @@ class OrderController extends Controller
         $orderCart = Order::where([['user_id', $userId], ['status', 'pagado']])->get();
 
         return response()->json($orderCart, 200);
-    }
+    } 
 
     /**
      * Store a newly created resource in storage.
@@ -45,7 +45,7 @@ class OrderController extends Controller
         $order = new Order();
         $order->status = 'carrito';
         $order->type_payment = null;
-        $totalPrice = null;
+        //$totalPrice = null;
         $currentTime = date('Y-m-d');
         $order->date = $currentTime;
         $order->user_id = Auth::user()->id;

@@ -12,11 +12,6 @@
             @csrf
             <label for="profile_image" class="botonForm">Cambiar foto</label>
             <input type="file" class="form-control-file" id="profile_image" name="profile_image" placeholder="Cambiar foto" accept=".jpeg, .png, .mp4">
-            @if (session('error'))
-                <div class="alert alert-danger">
-                    {{ session('error') }}
-                </div>
-            @endif
         </form>
         <a class="botonForm" href="{{route('formMedia')}}">Publicar</a>
         <a class="botonForm" id="botonFormAddress" href="{{route('formAddress')}}">Añadir Direccion</a>

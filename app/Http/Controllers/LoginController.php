@@ -37,13 +37,11 @@ class LoginController extends Controller
         $datosLogin = $request->only('username', 'password');
         if(Auth::attempt($datosLogin)){
 
-            //Autenticación valida
             if(Auth::user()->is_admin){
                 return redirect('admin');
             }
             else{
-                $user = Auth::user();
-                return view('auth.cuenta', compact('user'));
+                return redirect('cuenta');
             }
         }
         else{
@@ -63,7 +61,7 @@ class LoginController extends Controller
 
     public function cuenta()
     {
-        $user = User::find(Auth::id());
+        $user = Auth::user();
         return view('auth.cuenta', compact('user'));
     }
 }
