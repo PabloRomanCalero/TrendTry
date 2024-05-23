@@ -1,0 +1,47 @@
+
+
+.section-admin{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin-top: 6em;
+}
+.titulo{
+    font-size: 1.5em;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+.name-admin{
+    text-align: center;
+}
+.article-modalidades{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* estilos del js */
+.listado-admin{
+    overflow-y: scroll;
+    height: 500px;
+}
+
+.lista-admin{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid black;
+    margin: 5px;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+.titulo-lista{
+    border-bottom: 2px solid black;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+.botones-lista{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

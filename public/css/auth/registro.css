@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    background-color: #222;
+}
+
+.main-registro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+}
+
+.section-registro {
+    display: flex;
+    width: 80%;
+    background-color: #3b3b3b;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.article-registro-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-registro-img img {
+    width: 200px;
+    height: 200px;
+}
+
+.article-registro-form {
+    flex: 1;
+    padding: 20px;
+}
+
+h1 {
+    color: #52c856;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+label {
+    color: #fff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.botonEnviar {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #52c856;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.botonEnviar:hover {
+    background-color: #4CAF50;
+}
+
+.div-botonEnviar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.volver-inicio-registro {
+    text-align: center;
+    margin-top: 20px; 
+}
+
+.volver-inicio-registro a {
+    color: #52c856;
+    text-decoration: none;
+    font-size: 1.1em; 
+}
+
+.volver-inicio-registro a:hover {
+    text-decoration: underline;
+    color: #52c856;
+}
+
+ul {
+    color: red;
+    margin-top: 10px;
+}
+
+ul li {
+    list-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .section-registro {
+        margin-top: 20em;
+        margin-bottom: 5em;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .article-registro-img, 
+    .article-registro-form {
+        width: 93%;
+    }
+
+    .article-registro-img img {
+        margin-top: 5em;
+        width: 150px;
+        height: 150px;
+    }
+
+    .article-registro-form {
+        padding: 30px;
+    }
+
+    .botonEnviar {
+        padding: 12px;
+    }
+
+    .volver-inicio-registro a {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-registro {
+        margin-top: 2em;
+        margin-bottom: 2em;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .article-registro-img img {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    input[type="date"] {
+        padding: 12px;
+    }
+
+    .botonEnviar {
+        padding: 14px;
+    }
+
+    .volver-inicio-registro a {
+        font-size: 1em;
+    }
+}
+
+

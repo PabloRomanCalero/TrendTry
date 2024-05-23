@@ -1,0 +1,228 @@
+body {
+    background-color: #fff;
+    margin: 0;
+    overflow-y: scroll;
+}
+
+.section-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+    margin-top: 6em;
+}
+
+.profile-info {
+    margin-top: 2.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 25%;
+}
+
+.profile-picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+}
+
+.profile-img {
+    width: auto;
+    height: 100%;
+}
+
+.form-control-file{
+    display: none;
+}
+
+.profile-details {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+}
+
+.profile-details h2 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.profile-details p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.profile-stats {
+    list-style-type: none;
+    padding: 0;
+}
+
+.profile-stats li {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.profile-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.botonForm{
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 5px;
+    border: none;
+    background-color: #52c856;
+    color: #fff;
+    font-size: 1em;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.botonForm:hover {
+    background-color: #4CAF50;
+    cursor: pointer;
+}
+
+#unfollowUserButton{
+    background-color: red;
+}
+
+#unfollowUserButton:hover {
+    background-color: rgb(198, 10, 10);
+}
+
+.deslogearse{
+    margin-right: 10px;
+}
+
+.deslogearse > button{
+    background-color: red;
+}
+
+.deslogearse > button:hover{
+    background-color: rgb(198, 10, 10);
+}
+
+a.botonForm{
+    margin-bottom: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.deleteUserForm > button{
+    background-color: red;
+}
+
+.deleteUserForm > button:hover{
+    background-color: rgb(198, 10, 10);
+}
+
+.media-container {
+    width: 80%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 8em;
+}
+
+.titleH2Publi {
+    color: #333;
+    font-size: 2em; 
+    margin-top: 1em; 
+    margin-bottom: 1em; 
+    text-transform: uppercase; 
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .section-profile {
+        margin-top: 4em;
+    }
+
+    .profile-info {
+        width: 60%;
+        padding: 20px;
+    }
+
+    .profile-picture {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-details h2 {
+        font-size: 1.5em;
+    }
+
+    .profile-details p {
+        font-size: 0.9em;
+    }
+
+    .media-container {
+        width: 90%;
+        margin-bottom: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-profile {
+        margin-top: 2em;
+    }
+
+    .profile-info {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .profile-picture {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-details h2 {
+        font-size: 1.2em;
+    }
+
+    .profile-details p {
+        font-size: 0.8em;
+    }
+
+    .botonForm {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    .media-container {
+        width: 60%;
+        padding: 10px;
+        margin-bottom: 6em;
+        margin-right: 1em;
+    }
+
+    .titleH2Publi {
+        font-size: 1.5em;
+    }
+}
+
