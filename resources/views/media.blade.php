@@ -11,7 +11,7 @@
             <label for="description">Descripción:</label>
             <textarea id="description" name="description" rows="4" maxlength="120" required></textarea>
 
-            <div class="inputFileWrapper">
+            <div class="inputFileDiv">
                 <label class="botonForm" for="file">Cargar media</label>
                 <input type="file" id="file" name="file" accept=".jpeg, .png, .mp4" required>
             </div>
