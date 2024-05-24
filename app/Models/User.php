@@ -34,7 +34,7 @@ class User extends Authenticatable
     }
     public function descuento()
     {
-        return $this->hasOne(Descuento::class);
+        return $this->hasMany(Descuento::class);
     }
     
 
