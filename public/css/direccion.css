@@ -35,7 +35,7 @@
     box-sizing: border-box;
 }
 
-.section-address button.botonForm {
+.section-address .botonForm {
     align-self: center;
     padding: 10px 20px;
     background-color: #52c856;
@@ -43,15 +43,13 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 15px;
 }
 
-.section-address button.botonForm:hover {
+.section-address .botonForm:hover {
     background-color: #4CAF50;
 }
 
-.section-address button[type="submit"] {
-    margin-top: 15px;
-}
 
 
 
